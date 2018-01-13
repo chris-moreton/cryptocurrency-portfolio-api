@@ -4,8 +4,200 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cc37eac90b411d88634dc4aaae1b5ff",
+    "content-hash": "4a8e73cb3115ef894f954832c146929d",
     "packages": [
+        {
+            "name": "bitwasp/bitcoin",
+            "version": "v0.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bit-Wasp/bitcoin-php.git",
+                "reference": "7316b7bc5fc204d972e5df3b2485366ee4cd1a18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bit-Wasp/bitcoin-php/zipball/7316b7bc5fc204d972e5df3b2485366ee4cd1a18",
+                "reference": "7316b7bc5fc204d972e5df3b2485366ee4cd1a18",
+                "shasum": ""
+            },
+            "require": {
+                "bitwasp/buffertools": "~0.1",
+                "bitwasp/stratum": "~0.1",
+                "doctrine/cache": "~1.4",
+                "ext-gmp": "*",
+                "ext-json": "*",
+                "ext-mcrypt": "*",
+                "ext-openssl": "*",
+                "fguillot/json-rpc": "0.0.1",
+                "lastguest/murmurhash": "~1.0",
+                "mdanter/ecc": "~0.3",
+                "php": ">=5.4.0",
+                "pleonasm/merkle-tree": "1.0.0",
+                "react/react": "~0.4",
+                "react/socket-client": "~0.4",
+                "rgooding/protobuf-php": "~0.0",
+                "rych/hash_pbkdf2-compat": "~1.0"
+            },
+            "require-dev": {
+                "bitwasp/testing-php": "~0.0",
+                "symfony/yaml": "~2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BitWasp\\Bitcoin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicence"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Kerin",
+                    "homepage": "https://thomaskerin.io",
+                    "role": "Author"
+                }
+            ],
+            "description": "PHP Bitcoin library with functions for transactions, signatures, serialization, Random/Deterministic ECDSA keys, blocks, RPC bindings",
+            "homepage": "https://github.com/bit-wasp/bitcoin-php",
+            "time": "2015-06-30T19:18:43+00:00"
+        },
+        {
+            "name": "bitwasp/buffertools",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bit-Wasp/buffertools-php.git",
+                "reference": "5c2c8c0f5735c1d5475d2e91c0b967dd38417f10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bit-Wasp/buffertools-php/zipball/5c2c8c0f5735c1d5475d2e91c0b967dd38417f10",
+                "reference": "5c2c8c0f5735c1d5475d2e91c0b967dd38417f10",
+                "shasum": ""
+            },
+            "require": {
+                "php-64bit": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "v0.9.x",
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BitWasp\\Buffertools\\": "src/Buffertools/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Kerin",
+                    "homepage": "https://thomaskerin.io"
+                },
+                {
+                    "name": "Ruben de Vries",
+                    "email": "ruben@rubensayshi.com"
+                }
+            ],
+            "description": "Toolbox for working with binary and hex data. Similar to NodeJS Buffer.",
+            "time": "2017-12-27T19:23:12+00:00"
+        },
+        {
+            "name": "bitwasp/stratum",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bit-Wasp/stratum-php.git",
+                "reference": "1630d0ba7f86c52e70001bd04a088415dfcfc810"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bit-Wasp/stratum-php/zipball/1630d0ba7f86c52e70001bd04a088415dfcfc810",
+                "reference": "1630d0ba7f86c52e70001bd04a088415dfcfc810",
+                "shasum": ""
+            },
+            "require": {
+                "fguillot/json-rpc": "0.0.1",
+                "react/socket-client": "0.4.*"
+            },
+            "require-dev": {
+                "bitwasp/testing-php": "0.0.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BitWasp\\Stratum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Thomas Kerin",
+                    "homepage": "https://thomaskerin.io",
+                    "role": "Author"
+                }
+            ],
+            "description": "library for interfacing with stratum servers, used to serve both bitcoin mining and electrum clients",
+            "homepage": "https://github.com/Bit-Wasp/stratum-php",
+            "time": "2015-05-16T23:04:04+00:00"
+        },
+        {
+            "name": "blockcypher/php-client",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blockcypher/php-client.git",
+                "reference": "aae40fb2171563c3a900aa460d9465e53aad6d0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blockcypher/php-client/zipball/aae40fb2171563c3a900aa460d9465e53aad6d0a",
+                "reference": "aae40fb2171563c3a900aa460d9465e53aad6d0a",
+                "shasum": ""
+            },
+            "require": {
+                "bitwasp/bitcoin": "0.0.7.*",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "fabpot/goutte": "1.0.*",
+                "phpunit/phpunit": "4.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "BlockCypher": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "BlockCypher",
+                    "homepage": "https://github.com/blockcypher/php-client/contributors"
+                }
+            ],
+            "description": "BlockCypher's PHP SDK for REST API",
+            "homepage": "https://github.com/blockcypher/php-client",
+            "keywords": [
+                "bitcoin",
+                "blockchain",
+                "blockcypher",
+                "rest",
+                "sdk"
+            ],
+            "time": "2016-11-14T22:20:31+00:00"
+        },
         {
             "name": "coinbase/coinbase",
             "version": "v2.0.0",
@@ -51,6 +243,80 @@
                 "coinbase"
             ],
             "time": "2015-07-29T18:02:00+00:00"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/b3217d58609e9c8e661cd41357a54d926c4a2a1a",
+                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "alcaeus/mongo-php-adapter": "^1.1",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^5.7",
+                "predis/predis": "~1.0"
+            },
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Caching library offering an object-oriented API for many cache backends",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "cache",
+                "caching"
+            ],
+            "time": "2017-08-25T07:02:50+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -161,6 +427,171 @@
                 "event-emitter"
             ],
             "time": "2017-07-23T21:35:13+00:00"
+        },
+        {
+            "name": "fgrosse/phpasn1",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fgrosse/PHPASN1.git",
+                "reference": "0e27e71e3d0a8d5c3f1471d727fd9574d920f33c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fgrosse/PHPASN1/zipball/0e27e71e3d0a8d5c3f1471d727fd9574d920f33c",
+                "reference": "0e27e71e3d0a8d5c3f1471d727fd9574d920f33c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.3",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "suggest": {
+                "php-curl": "For loading OID information from the web if they have not bee defined statically"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FG\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Friedrich Große",
+                    "email": "friedrich.grosse@gmail.com",
+                    "homepage": "https://github.com/FGrosse",
+                    "role": "Author"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/FGrosse/PHPASN1/contributors"
+                }
+            ],
+            "description": "A PHP Framework that allows you to encode and decode arbitrary ASN.1 structures using the ITU-T X.690 Encoding Rules.",
+            "homepage": "https://github.com/FGrosse/PHPASN1",
+            "keywords": [
+                "DER",
+                "asn.1",
+                "asn1",
+                "ber",
+                "binary",
+                "decoding",
+                "encoding",
+                "x.509",
+                "x.690",
+                "x509",
+                "x690"
+            ],
+            "time": "2017-12-17T10:21:51+00:00"
+        },
+        {
+            "name": "fguillot/json-rpc",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fguillot/JsonRPC.git",
+                "reference": "86e8339205616ad9b09d581957cc084a99c0ed27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fguillot/JsonRPC/zipball/86e8339205616ad9b09d581957cc084a99c0ed27",
+                "reference": "86e8339205616ad9b09d581957cc084a99c0ed27",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonRPC": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Frédéric Guillot",
+                    "homepage": "http://fredericguillot.com"
+                }
+            ],
+            "description": "A simple Json-RPC client/server library that just works",
+            "homepage": "https://github.com/fguillot/JsonRPC",
+            "time": "2014-11-22T20:32:14+00:00"
+        },
+        {
+            "name": "graze/guzzle-jsonrpc",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graze/guzzle-jsonrpc.git",
+                "reference": "c4513b7659534792b906723158a8388f54275a61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graze/guzzle-jsonrpc/zipball/c4513b7659534792b906723158a8388f54275a61",
+                "reference": "c4513b7659534792b906723158a8388f54275a61",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "guzzlehttp/promises": "^1.0",
+                "php": ">=5.5",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "adlawson/timezone": "~1.0",
+                "fabpot/php-cs-fixer": "~0.5",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "Graze\\GuzzleHttp\\JsonRpc\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graze tech team",
+                    "homepage": "https://github.com/graze/guzzle-jsonrpc/graphs/contributors"
+                }
+            ],
+            "description": "JSON-RPC 2.0 client for Guzzle",
+            "homepage": "https://github.com/graze/guzzle-jsonrpc",
+            "keywords": [
+                "Guzzle",
+                "guzzlehttp",
+                "http",
+                "json",
+                "json-rpc",
+                "jsonrpc",
+                "ring",
+                "rpc"
+            ],
+            "time": "2016-02-16T15:18:21+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1448,6 +1879,43 @@
             "time": "2018-01-06T05:43:36+00:00"
         },
         {
+            "name": "kesar/ethereum-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kesar/ethereum-php.git",
+                "reference": "94b39a34ff7fbaff63710ae790217c62d7b3790f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kesar/ethereum-php/zipball/94b39a34ff7fbaff63710ae790217c62d7b3790f",
+                "reference": "94b39a34ff7fbaff63710ae790217c62d7b3790f",
+                "shasum": ""
+            },
+            "require": {
+                "graze/guzzle-jsonrpc": "^3.2",
+                "php": ">=7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cesar Rodriguez",
+                    "email": "cesar@lightstreams.io"
+                }
+            ],
+            "description": "Ethereum client library in PHP",
+            "time": "2017-11-25T17:37:29+00:00"
+        },
+        {
             "name": "laravel/lumen-framework",
             "version": "v5.5.2",
             "source": {
@@ -1529,6 +1997,121 @@
                 "lumen"
             ],
             "time": "2017-10-16T23:13:50+00:00"
+        },
+        {
+            "name": "lastguest/murmurhash",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lastguest/murmurhash-php.git",
+                "reference": "8eb06483456bc98f5adb7707d981a8ef6a065fa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lastguest/murmurhash-php/zipball/8eb06483456bc98f5adb7707d981a8ef6a065fa2",
+                "reference": "8eb06483456bc98f5adb7707d981a8ef6a065fa2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "murmurhash3.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefano Azzolini",
+                    "email": "lastguest@gmail.com",
+                    "homepage": "https://github.com/lastguest/murmurhash-php"
+                }
+            ],
+            "description": "MurmurHash3 Hash",
+            "homepage": "https://github.com/lastguest/murmurhash-php",
+            "keywords": [
+                "hash",
+                "hashing",
+                "murmur"
+            ],
+            "time": "2016-05-16T23:22:58+00:00"
+        },
+        {
+            "name": "mdanter/ecc",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpecc/phpecc.git",
+                "reference": "ed5c6d496f5310de1b7071b8375fafa3559a1344"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpecc/phpecc/zipball/ed5c6d496f5310de1b7071b8375fafa3559a1344",
+                "reference": "ed5c6d496f5310de1b7071b8375fafa3559a1344",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "fgrosse/phpasn1": "v2.0.x",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "~2",
+                "symfony/yaml": "~2.6|~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mdanter\\Ecc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matyas Danter",
+                    "homepage": "http://matejdanter.com/",
+                    "role": "Author"
+                },
+                {
+                    "name": "Thibaud Fabre",
+                    "email": "thibaud@aztech.io",
+                    "homepage": "http://aztech.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Thomas Kerin",
+                    "email": "afk11@users.noreply.github.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "PHP Elliptic Curve Cryptography library",
+            "homepage": "https://github.com/phpecc/phpecc",
+            "keywords": [
+                "Diffie",
+                "ECDSA",
+                "Hellman",
+                "curve",
+                "ecdh",
+                "elliptic",
+                "nistp192",
+                "nistp224",
+                "nistp256",
+                "nistp384",
+                "nistp521",
+                "phpecc",
+                "secp256k1",
+                "secp256r1"
+            ],
+            "time": "2017-10-09T16:05:37+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1795,6 +2378,49 @@
                 "random"
             ],
             "time": "2017-09-27T21:40:39+00:00"
+        },
+        {
+            "name": "pleonasm/merkle-tree",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pleonasm/merkle-tree.git",
+                "reference": "9ddc9d0a0e396750fada378f3aa90f6c02dd56a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pleonasm/merkle-tree/zipball/9ddc9d0a0e396750fada378f3aa90f6c02dd56a1",
+                "reference": "9ddc9d0a0e396750fada378f3aa90f6c02dd56a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-xdebug": ">=2.2.0",
+                "phpunit/php-invoker": ">=1.0.0,<1.2.0",
+                "phpunit/phpunit": "3.7.19",
+                "satooshi/php-coveralls": "*@dev",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pleo": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Nagi",
+                    "email": "matthew.nagi@base-2.net"
+                }
+            ],
+            "description": "An implementation of a Merkle Tree in PHP",
+            "time": "2013-05-22T20:46:20+00:00"
         },
         {
             "name": "psr/container",
@@ -2129,6 +2755,48 @@
             "time": "2017-12-20T16:47:13+00:00"
         },
         {
+            "name": "react/child-process",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/child-process.git",
+                "reference": "7d1f765d6caa0303272c7f4bcef1b1bbc1b38c42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/child-process/zipball/7d1f765d6caa0303272c7f4bcef1b1bbc1b38c42",
+                "reference": "7d1f765d6caa0303272c7f4bcef1b1bbc1b38c42",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=5.3.0",
+                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
+                "react/stream": "^1.0 || ^0.7.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35",
+                "sebastian/environment": "^3.0 || ^2.0 || ^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\ChildProcess\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Event-driven library for executing child processes with ReactPHP.",
+            "keywords": [
+                "event-driven",
+                "process",
+                "reactphp"
+            ],
+            "time": "2017-12-22T08:11:14+00:00"
+        },
+        {
             "name": "react/dns",
             "version": "v0.4.11",
             "source": {
@@ -2217,6 +2885,96 @@
             "time": "2017-04-27T10:56:23+00:00"
         },
         {
+            "name": "react/http",
+            "version": "v0.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/http.git",
+                "reference": "92deba861d5a1320584450cfa61622a2969b00ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/http/zipball/92deba861d5a1320584450cfa61622a2969b00ef",
+                "reference": "92deba861d5a1320584450cfa61622a2969b00ef",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=5.3.0",
+                "react/promise": "^2.3 || ^1.2.1",
+                "react/promise-stream": "^1.1",
+                "react/socket": "^1.0 || ^0.8.3",
+                "react/stream": "^1.0 || ^0.7.1",
+                "ringcentral/psr7": "^1.2"
+            },
+            "require-dev": {
+                "clue/block-react": "^1.1",
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Event-driven, streaming plaintext HTTP and secure HTTPS server for ReactPHP",
+            "keywords": [
+                "event-driven",
+                "http",
+                "https",
+                "reactphp",
+                "server",
+                "streaming"
+            ],
+            "time": "2018-01-05T15:30:50+00:00"
+        },
+        {
+            "name": "react/http-client",
+            "version": "v0.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/http-client.git",
+                "reference": "eb521c0f9de9b9780b9ced78d90314085632377f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/http-client/zipball/eb521c0f9de9b9780b9ced78d90314085632377f",
+                "reference": "eb521c0f9de9b9780b9ced78d90314085632377f",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0",
+                "guzzlehttp/psr7": "^1.0",
+                "php": ">=5.4.0",
+                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
+                "react/promise": "~2.2",
+                "react/socket": "^1.0 || ^0.8.4",
+                "react/stream": "^1.0 || ^0.7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0 || ^4.8.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\HttpClient\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Event-driven, streaming HTTP client for ReactPHP",
+            "keywords": [
+                "http"
+            ],
+            "time": "2017-09-17T14:41:00+00:00"
+        },
+        {
             "name": "react/promise",
             "version": "v2.5.1",
             "source": {
@@ -2261,6 +3019,62 @@
                 "promises"
             ],
             "time": "2017-03-25T12:08:31+00:00"
+        },
+        {
+            "name": "react/promise-stream",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise-stream.git",
+                "reference": "00e269d611e9c9a29356aef64c07f7e513e73dc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise-stream/zipball/00e269d611e9c9a29356aef64c07f7e513e73dc9",
+                "reference": "00e269d611e9c9a29356aef64c07f7e513e73dc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "react/promise": "^2.1 || ^1.2",
+                "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4 || ^0.3"
+            },
+            "require-dev": {
+                "clue/block-react": "^1.0",
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35",
+                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
+                "react/promise-timer": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Promise\\Stream\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@lueck.tv"
+                }
+            ],
+            "description": "The missing link between Promise-land and Stream-land for ReactPHP",
+            "homepage": "https://github.com/reactphp/promise-stream",
+            "keywords": [
+                "Buffer",
+                "async",
+                "promise",
+                "reactphp",
+                "stream",
+                "unwrap"
+            ],
+            "time": "2017-12-22T12:02:05+00:00"
         },
         {
             "name": "react/promise-timer",
@@ -2316,6 +3130,61 @@
             "time": "2017-12-22T15:41:41+00:00"
         },
         {
+            "name": "react/react",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/react.git",
+                "reference": "110a3c0d37ece28c0670769ac0225c358db11744"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/react/zipball/110a3c0d37ece28c0670769ac0225c358db11744",
+                "reference": "110a3c0d37ece28c0670769ac0225c358db11744",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "react/cache": "^0.4",
+                "react/child-process": "^0.5",
+                "react/dns": "^0.4",
+                "react/event-loop": "^0.4",
+                "react/http": "^0.8.1",
+                "react/http-client": "^0.5",
+                "react/promise": "^2.1",
+                "react/promise-stream": "^1.1.1",
+                "react/socket": "^0.8.8",
+                "react/stream": "^0.7"
+            },
+            "require-dev": {
+                "clue/block-react": "^1.1",
+                "clue/stream-filter": "^1.3",
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "suggest": {
+                "ext-event": "Allows for use of a more performant event-loop implementation.",
+                "ext-libev": "Allows for use of a more performant event-loop implementation.",
+                "ext-libevent": "Allows for use of a more performant event-loop implementation."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Nuclear Reactor written in PHP.",
+            "keywords": [
+                "asynchronous",
+                "event-loop",
+                "reactor"
+            ],
+            "time": "2018-01-07T11:47:29+00:00"
+        },
+        {
             "name": "react/socket",
             "version": "v0.8.8",
             "source": {
@@ -2363,6 +3232,47 @@
             "time": "2018-01-06T12:13:20+00:00"
         },
         {
+            "name": "react/socket-client",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/socket-client.git",
+                "reference": "6ec8c3aefc018acec763fa6e950e1baa947231fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/socket-client/zipball/6ec8c3aefc018acec763fa6e950e1baa947231fc",
+                "reference": "6ec8c3aefc018acec763fa6e950e1baa947231fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "react/dns": "0.4.*",
+                "react/event-loop": "0.4.*",
+                "react/promise": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "React\\SocketClient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Async connector to open TCP/IP and SSL/TLS based connections.",
+            "keywords": [
+                "Socket"
+            ],
+            "time": "2014-02-02T01:11:26+00:00"
+        },
+        {
             "name": "react/stream",
             "version": "v0.7.6",
             "source": {
@@ -2407,6 +3317,160 @@
                 "writable"
             ],
             "time": "2017-12-21T14:12:01+00:00"
+        },
+        {
+            "name": "rgooding/protobuf-php",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rgooding/Protobuf-PHP.git",
+                "reference": "d688d7894d65d80a38846e0b622b9a2cd7fd4d68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rgooding/Protobuf-PHP/zipball/d688d7894d65d80a38846e0b622b9a2cd7fd4d68",
+                "reference": "d688d7894d65d80a38846e0b622b9a2cd7fd4d68",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "protoc-gen-php.bat",
+                "protoc-gen-php.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "DrSlump": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Iván -DrSlump- Montes",
+                    "email": "drslump@pollinimini.net",
+                    "homepage": "https://github.com/drslump/Protobuf-PHP"
+                },
+                {
+                    "name": "Richard Gooding",
+                    "email": "richard.gooding@justdevelop.it"
+                }
+            ],
+            "description": "PHP implementation of Google's Protocol Buffers",
+            "homepage": "https://github.com/rgooding/Protobuf-PHP",
+            "keywords": [
+                "protobuf",
+                "protocol buffer",
+                "serializing"
+            ],
+            "time": "2013-05-29T14:39:13+00:00"
+        },
+        {
+            "name": "ringcentral/psr7",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ringcentral/psr7.git",
+                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ringcentral/psr7/zipball/2594fb47cdc659f3fcf0aa1559b7355460555303",
+                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RingCentral\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2016-03-25T17:36:49+00:00"
+        },
+        {
+            "name": "rych/hash_pbkdf2-compat",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rchouinard/hash_pbkdf2-compat.git",
+                "reference": "cc61512c5284616885449d4b8de231e087823e5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rchouinard/hash_pbkdf2-compat/zipball/cc61512c5284616885449d4b8de231e087823e5c",
+                "reference": "cc61512c5284616885449d4b8de231e087823e5c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/hash_pbkdf2_compat.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Chouinard",
+                    "email": "rchouinard@gmail.com"
+                }
+            ],
+            "description": "Provides hash_pbkdf2() to PHP versions >=5.3,<5.5.",
+            "keywords": [
+                "compatibility",
+                "hash_pbkdf2",
+                "pbkdf2"
+            ],
+            "time": "2015-11-23T03:34:42+00:00"
         },
         {
             "name": "symfony/console",
@@ -4698,7 +5762,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "jaggedsoft/php-binance-api": 20
+        "jaggedsoft/php-binance-api": 20,
+        "kesar/ethereum-php": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

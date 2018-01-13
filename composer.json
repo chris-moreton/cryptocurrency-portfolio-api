@@ -9,7 +9,9 @@
         "laravel/lumen-framework": "5.5.*",
         "vlucas/phpdotenv": "~2.2",
         "jaggedsoft/php-binance-api": "dev-master",
-        "coinbase/coinbase": "2.0"
+        "coinbase/coinbase": "2.0",
+        "kesar/ethereum-php": "dev-master",
+        "blockcypher/php-client": "^1.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
