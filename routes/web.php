@@ -46,7 +46,8 @@ function getBalance($currency) {
 $router->get('/', function () use ($router) {
 
     $wallets = [];
-    $currencies = ['ETH'];
+    
+    $currencies = explode(',', getenv('BLOCKCYPHER_CURRENCIES'));
     foreach ($currencies as $currency) {
         $wallets[strtoupper($currency)] = getBalance($currency);
     }
